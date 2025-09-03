@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+/* Header & Navbar */
+header {
+  background: #0078d7;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  font-weight: bold;
+}
+
+/* Card Sections */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.dark-mode .card {
+  background: #1e1e1e;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #0078d7;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005a9e;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Counter */
+.counter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.faq {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  cursor: pointer;
+}
+
+.faq-answer.hidden {
+  display: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdownMenu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  list-style: none;
+  padding: 5px 0;
+  margin-top: 5px;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#dropdownMenu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dropdownMenu li:hover {
+  background: #f0f0f0;
+}
+
+.dark-mode #dropdownMenu {
+  background: #1e1e1e;
+  color: white;
+  border-color: #444;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  background: #eee;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #0078d7;
+  color: white;
+}
+
+.tab-content {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+input:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 5px rgba(0,120,215,0.4);
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0078d7;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

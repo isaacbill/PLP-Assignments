@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Online Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🛍️ My Online Shop</h1>
+    <nav>
+      <button id="toggleTheme">🌙 Night Mode</button>
+      <div class="cart">
+        🛒 Cart: <span id="count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Part 1: Promo -->
+    <section class="card">
+      <h2>🎁 Special Offer</h2>
+      <button id="promoBtn">Click for Today’s Promo Code</button>
+      <p id="promoOutput"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section class="card">
+      <h2>🛒 Shopping Features</h2>
+      
+      <!-- Cart Counter -->
+      <div class="counter">
+        <button id="decrease">➖ Remove Item</button>
+        <button id="increase">➕ Add Item</button>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <h3 class="faq-question">❓ What is the return policy?</h3>
+        <p class="faq-answer hidden">You can return items within 30 days of purchase.</p>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-question">❓ How long is shipping?</h3>
+        <p class="faq-answer hidden">Standard shipping takes 3–5 business days.</p>
+      </div>
+    </section>
+    
+
+    <!-- Part 3: Form Validation -->
+    <section class="card">
+      <h2>📝 Sign Up for an Account</h2>
+      <form id="signupForm">
+        <label>
+          Name:
+          <input type="text" id="name" required>
+        </label>
+        <small class="error" id="nameError"></small>
+
+        <label>
+          Email:
+          <input type="email" id="email" required>
+        </label>
+        <small class="error" id="emailError"></small>
+
+        <label>
+          Password:
+          <input type="password" id="password" required>
+        </label>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Online Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
