@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Shopping Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🛍️ ShopEase — Your Smart Shopping Assistant</h1>
+    <p>Hover, calculate, and interact to see animations in real shopping scenarios!</p>
+  </header>
+
+  <!-- Part 1: CSS animations only -->
+  <section id="part1">
+    <h2>🎨 Part 1: CSS Animations</h2>
+    <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+    <div class="promo-banner">🔥 Limited Time Offer: 30% Off Everything!</div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section id="part2">
+    <h2>📚 Part 2: JavaScript Functions</h2>
+
+    <!-- Discount calculator -->
+    <h3>💸 Discount Calculator</h3>
+    <input type="number" id="priceInput" placeholder="Enter Product Price">
+    <input type="number" id="discountInput" placeholder="Enter Discount %">
+    <button onclick="showDiscount()">Calculate</button>
+    <p id="result"></p>
+
+    <!-- Stock checker -->
+    <h3>📦 Stock Checker</h3>
+    <input type="number" id="stockInput" placeholder="Enter Current Stock">
+    <button onclick="checkStock()">Check Stock</button>
+    <p id="stockResult"></p>
+  </section>
+
+  <!-- Part 3: Combining CSS & JS -->
+  <section id="part3">
+    <h2>🎬 Part 3: Combining CSS & JS</h2>
+    <button onclick="toggleCart()">🛒 View Cart</button>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <h3>Your Shopping Cart</h3>
+        <p>You currently have <span id="cartCount">0</span> item(s) in your cart.</p>
+        <button onclick="toggleCart()">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
